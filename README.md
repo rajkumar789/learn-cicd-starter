@@ -1,3 +1,7 @@
+![CI Status](https://github.com/rajkumar789/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+
+# Learn CI/CD Starter
+The rest of your README content continues here...
 # learn-cicd-starter (Notely)
 
 This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
