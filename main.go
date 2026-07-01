@@ -94,6 +94,6 @@ func main() {
 		Handler:           router,
 		ReadHeaderTimeout: 30 * time.Second,
 	}
-	log.Println("Serving on port: " + port) //#nosec G706
+	log.Println("Serving on port: " + port) //nolint:gosec // G706: port is from a trusted env var
 	log.Fatal(srv.ListenAndServe())
 }
