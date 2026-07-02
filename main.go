@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/go-chi/chi"
@@ -94,6 +95,6 @@ func main() {
 		Handler:           router,
 		ReadHeaderTimeout: 30 * time.Second,
 	}
-	log.Println("Serving on port: " + port) //nolint:gosec // G706: port is from a trusted env var
+	log.Println("Serving on port: " + port)
 	log.Fatal(srv.ListenAndServe())
 }
