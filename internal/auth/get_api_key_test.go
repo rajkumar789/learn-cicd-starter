@@ -28,7 +28,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr:     false,
 		},
 		{
-			name: "missing or malformed authorization header",
+			name:    "missing or malformed authorization header",
 			headers: http.Header{
 				// Leaving this empty simulates a missing Authorization header
 			},
@@ -55,4 +55,3 @@ func TestGetAPIKey(t *testing.T) {
 		})
 	}
 }
-
